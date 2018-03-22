@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (4.5.1)
+  - PureLayout (3.0.2)
+  - ReachabilitySwift (3)
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
+  - SVProgressHUD (2.2.2)
+  - YelpAPI (2.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - PureLayout (~> 3.0)
+  - ReachabilitySwift (~> 3)
+  - SDWebImage
+  - SVProgressHUD (~> 2.2)
+  - YelpAPI
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  YelpAPI: a0475cf4a7b6f9fe81f1bb7b8a8492770f21e3c7
+
+PODFILE CHECKSUM: b249ffadaadea19a4e5695a09401cf2372cc3fbd
+
+COCOAPODS: 1.1.1

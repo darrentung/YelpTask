@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ENf-44-Ezn" customClass="DefaultCell" customModule="TestProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ENf-44-Ezn" id="Axm-SE-dse">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ina-v3-GPr" customClass="LabelRegular" customModule="TestProject" customModuleProvider="target">
+                        <rect key="frame" x="16" y="8" width="351" height="27.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ina-v3-GPr" secondAttribute="bottom" constant="8" id="2v0-vE-ReY"/>
+                    <constraint firstItem="ina-v3-GPr" firstAttribute="top" secondItem="Axm-SE-dse" secondAttribute="top" constant="8" id="BZ6-xp-aqm"/>
+                    <constraint firstAttribute="trailing" secondItem="ina-v3-GPr" secondAttribute="trailing" constant="8" id="YxX-NP-6Y3"/>
+                    <constraint firstItem="ina-v3-GPr" firstAttribute="leading" secondItem="Axm-SE-dse" secondAttribute="leading" constant="16" id="k5O-Gt-xux"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelTitle" destination="ina-v3-GPr" id="6py-eE-82a"/>
+            </connections>
+            <point key="canvasLocation" x="-25" y="-64"/>
+        </tableViewCell>
+    </objects>
+</document>

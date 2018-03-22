@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseHeaderView" customModule="TestProject" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="P18-mV-deS" id="KZJ-s6-nQA"/>
+                <outlet property="labelTitle" destination="eh6-6P-nX6" id="MaC-VU-q7e"/>
+                <outlet property="viewBottomLine" destination="wPb-VH-OFo" id="36W-w7-TzU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="P18-mV-deS">
+            <rect key="frame" x="0.0" y="0.0" width="503" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eh6-6P-nX6" customClass="LabelBold" customModule="TestProject" customModuleProvider="target">
+                    <rect key="frame" x="8" y="28" width="487" height="20"/>
+                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPb-VH-OFo">
+                    <rect key="frame" x="0.0" y="74" width="503" height="1"/>
+                    <color key="backgroundColor" red="0.7843137255" green="0.80392156859999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="JkE-UW-7Am"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="wPb-VH-OFo" firstAttribute="leading" secondItem="P18-mV-deS" secondAttribute="leading" id="0Uh-DL-oiS"/>
+                <constraint firstAttribute="trailing" secondItem="wPb-VH-OFo" secondAttribute="trailing" id="B6K-D0-Hk9"/>
+                <constraint firstItem="Y50-Gi-xvY" firstAttribute="trailing" secondItem="eh6-6P-nX6" secondAttribute="trailing" constant="8" id="H01-be-xY9"/>
+                <constraint firstAttribute="bottom" secondItem="wPb-VH-OFo" secondAttribute="bottom" id="Qd6-fG-UAo"/>
+                <constraint firstItem="eh6-6P-nX6" firstAttribute="centerY" secondItem="P18-mV-deS" secondAttribute="centerY" id="VqI-xm-Dft"/>
+                <constraint firstItem="eh6-6P-nX6" firstAttribute="leading" secondItem="P18-mV-deS" secondAttribute="leading" constant="8" id="aCS-zz-457"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Y50-Gi-xvY"/>
+            <point key="canvasLocation" x="-874" y="-871"/>
+        </view>
+    </objects>
+</document>

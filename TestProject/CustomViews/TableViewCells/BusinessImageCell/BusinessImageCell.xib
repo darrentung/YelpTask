@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="235" id="ErW-EJ-mJI" customClass="BusinessImageCell" customModule="TestProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="235"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ErW-EJ-mJI" id="x1R-q0-7iY">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="234.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurantPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="T5O-1v-a87">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="183"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="T5O-1v-a87" secondAttribute="height" multiplier="1.75" id="RFF-Rb-Xqw"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box" translatesAutoresizingMaskIntoConstraints="NO" id="KoK-3q-kgX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="183"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label Label Label Label Label Label " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4l-DP-knF" customClass="LabelBold" customModule="TestProject" customModuleProvider="target">
+                        <rect key="frame" x="8" y="154" width="304" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KoK-3q-kgX" firstAttribute="height" secondItem="T5O-1v-a87" secondAttribute="height" id="3js-0B-aMT"/>
+                    <constraint firstItem="T5O-1v-a87" firstAttribute="leading" secondItem="x1R-q0-7iY" secondAttribute="leading" id="9zR-LF-uFK"/>
+                    <constraint firstAttribute="trailing" secondItem="q4l-DP-knF" secondAttribute="trailing" constant="8" id="D6U-EE-XbL"/>
+                    <constraint firstItem="KoK-3q-kgX" firstAttribute="top" secondItem="T5O-1v-a87" secondAttribute="top" id="Hvk-7i-Pwi"/>
+                    <constraint firstItem="KoK-3q-kgX" firstAttribute="leading" secondItem="T5O-1v-a87" secondAttribute="leading" id="Imh-AR-owm"/>
+                    <constraint firstItem="q4l-DP-knF" firstAttribute="leading" secondItem="x1R-q0-7iY" secondAttribute="leading" constant="8" id="JZc-uD-JCT"/>
+                    <constraint firstItem="T5O-1v-a87" firstAttribute="top" secondItem="x1R-q0-7iY" secondAttribute="top" id="NNt-O0-QIR"/>
+                    <constraint firstItem="q4l-DP-knF" firstAttribute="bottom" secondItem="T5O-1v-a87" secondAttribute="bottom" constant="-8" id="YmP-PU-wtI"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="T5O-1v-a87" secondAttribute="bottom" id="auU-Tw-gw2"/>
+                    <constraint firstAttribute="trailing" secondItem="T5O-1v-a87" secondAttribute="trailing" id="ggo-Ev-co0"/>
+                    <constraint firstItem="KoK-3q-kgX" firstAttribute="width" secondItem="T5O-1v-a87" secondAttribute="width" id="zFs-a8-raJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageViewBusiness" destination="T5O-1v-a87" id="3h6-20-sqx"/>
+                <outlet property="labelBusinessName" destination="q4l-DP-knF" id="92E-Hz-cIa"/>
+            </connections>
+            <point key="canvasLocation" x="-69.5" y="-13.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="box" width="414" height="214"/>
+        <image name="restaurantPlaceholder" width="320" height="214"/>
+    </resources>
+</document>
