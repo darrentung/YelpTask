@@ -12,6 +12,12 @@ import CoreLocation
 import YelpAPI
 import SVProgressHUD
 
+struct URLs {
+    static let placeinfoURL = "https://maps.googleapis.com/maps/api/place/details/json?"
+    static let placeautocompleteURL =  "https://maps.googleapis.com/maps/api/place/autocomplete/json?"
+    
+}
+
 class ServiceManager: NSObject {
 	
     var yelpClient:YLPClient?
